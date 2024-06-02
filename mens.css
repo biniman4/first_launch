@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+::root{
+    --nav-bar-color:linear-gradient(to right, #000080, #000)
+}
+nav{
+    border: 1px solid black;
+    background: linear-gradient(to right, #000080, #000) !important;
+    color: white;
+    font-size: 30px;
+    height:80px;
+}
+.nav-bar ul{
+    display: flex;
+   flex-direction: row;
+   justify-content:space-around;
+   list-style-type: none;
+   margin-top: 10px;
+   text-align: center;
+}
+nav ul li{
+    list-style-type: style none;
+    margin-top: 10px;
+}
+nav ul li a{
+    text-decoration:none;
+    color: white;
+}
+
+
+.nav-bar ul li a:hover {
+    border-bottom:2px solid  #ff9800; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav ul h1 {
+    padding-bottom:20px;
+}
+
+nav ul li input{
+    border-radius: 15px;
+    margin-bottom: 10px !important;
+    height: 40px;
+    width: 300px;
+    vertical-align: middle;
+}
+nav ul li i{
+    margin-left:-35px;
+}
+.promotion{
+    background: linear-gradient(135deg, #1e88e5, #0d47a1);
+    text-align: center;
+    color: white;
+    margin:30px 50px;
+    height:110px;
+}
+
+.promotion h2{
+    padding: 10px;
+    font-size:25px;
+}
+.promotion p{
+    font-size: 20px;
+}
+.promotion button{
+    margin-top: 5px;
+    height: 30px;
+    width:120px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    color: white;
+    font-size:20px;
+}
