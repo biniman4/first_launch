@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>suit</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container-nav {
+      background: linear-gradient(90deg, #885e54, #feb47b);
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      margin-top: -100px;
+      height: 50px;
+    }
+
+    .navbar-collapse {
+      display: flex;
+      justify-content: center;
+    
+    }
+
+    .navbar-nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .nav-item {
+      margin: 0;
+    }
+
+    .nav-link {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 5px 10px;
+      display: block;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      background-color: #584444;
+      border-radius: 5px;
+    }
+
+    .main {
+      display: flex;
+      align-items: center;
+      gap: 6rem;
+      margin: 100px 0; /* Added margin to avoid overlap with fixed navbar */
+      flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    }
+
+    .main .men {
+      width: 100%;
+      max-width: 600px;
+      transition: all 2000ms ease;
+      cursor: pointer;
+      border-radius: 150px;
+    }
+
+    .main .men:hover {
+      transform: scale(1.3);
+    }
+
+    .main .main-detil {
+      text-align: center;
+      color: #2a2a2a;
+      flex: 1; /* Allow text to take up available space */
+    }
+
+    .main .main-detil h1 {
+      font-size: 40px;
+    }
+
+    .main .main-detil h4 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .nav-item {
+      text-align: center;
+      display: contents;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 992px) {
+      .navbar-nav {
+        gap: 1rem;
+        font-size: 1rem;
+      }
+
+      .main {
+        gap: 3rem;
+      }
+
+      .main .main-detil h1 {
+        font-size: 30px;
+      }
+
+      .main .main-detil h4 {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main .men {
+        width: 80%;
+      }
+
+      .main .main-detil h1 {
+        font-size: 25px;
+      }
+
+      .main .main-detil h4 {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .navbar-nav {
+        gap: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .main {
+        gap: 1rem;
+      }
+
+      .main .men {
+        width: 100%;
+      }
+
+      .main .main-detil h1 {
+        font-size: 20px;
+      }
+
+      .main .main-detil h4 {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="container-nav">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+        <li class="nav-item">
+          <a class="nav-link" href="Women's clothes"><i>Women's clothes</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html"><i>Product Home</i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+    <div class="div-r">
+      <div class="main">
+        <img src="img/m1.jpg" alt="men" class="men">
+        <div class="main-detil">
+          <h1><i>Good clothes</br> open all doors</i></h1>
+          <h4>The suit does not make the man,<br> but it certainly helps.</h4>
+        </div>
+      </div>
+      <div class="main">
+        <img src="img/m2.jpg" alt="men" class="men">
+        <div class="main-detil">
+          <h1><i>Every man should own <br>a well-tailored suit.</i></h1>
+          <h4>The suit does not make the man,<br> but it certainly helps.</h4>
+        </div>
+      </div>
+      <div class="main">
+        <img src="img/m3.jpg" alt="suit3" class="men">
+        <div class="main-detil">
+          <h1><i>Fashion is what you buy.<br> Style is what you do with it.</i></h1>
+          <h4>The suit does not make the man,<br> but it certainly helps.</h4>
+        </div>
+      </div>
+      <div class="main">
+        <img src="img/m4.jpg" alt="suit4" class="men">
+        <div class="main-detil">
+          <h1><i>A good suit is like a best friend. <br>it makes you look great and feel even better."</i></h1>
+          <h4>The suit does not make the man,<br> but it certainly helps.</h4>
+        </div>
+      </div>
+      <div class="main">
+        <img src="img/m5.jpg" alt="suit5" class="men">
+        <div class="main-detil">
+          <h1><i>Good clothes</br> open all doors</i></h1>
+          <h4>The suit does not make the man,<br> but it certainly helps.</h4>
+        </div>
+      </div>
+      <div class="main">
+        <img src="img/m6.jpg" alt="suit6" class="men">
+        <div class="main-detil">
+          <h1><i>Style is a way to say who you are <br> without having to speak.</i></h1>
+          <h4>The suit does not make the man,<br> but it certainly helps.</h4>
+        </div>
+      </div>
+      <div class="main">
+        <img src="img/m7.jpg" alt="suit7" class="men">
+        <div class="main-detil">
+          <h1><i>A good suit is like <br> a work of art."</i></h1>
+          <h4>The suit does not make the man,<br> but it certainly helps.</h4>
+        </div>
+      </div>
+      <div class="main">
+        <img src="img/m8.jpg" alt="suit7" class="men">
+        <div class="main-detil">
+          <h1><i>Suits are the armor <br>of modern gentlemen.</i></h1>
+          <h4>The suit does not make the man,<br> but it certainly helps.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
