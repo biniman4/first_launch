@@ -24,6 +24,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
 }
 
 .nav-bar h1 {
@@ -43,7 +46,7 @@ body {
 }
 
 .nav-bar ul li {
-    margin: 0 15px;
+    margin: 0 35px;
     font-size: 24px;
 }
 
@@ -97,6 +100,31 @@ body {
     .icon:hover{
         transform: scale(1.3);
     }
+    .cloth-container {
+       text-align: center;
+       width:400px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    
+    .cloth-item{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .cloth-image {
+        width: 300px;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+    }
 }
 
 
@@ -106,16 +134,18 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    margin-top: 40px;
 }
-
+.cloth-container h1{
+    margin-top: 150px;   
+}
 .cloth-item {
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    margin-bottom: 0;
 }
-
 .cloth-image {
     width: 300px;
     height: 400px;
@@ -124,13 +154,18 @@ body {
     background-position: center;
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
-
 .cloth-image:hover {
     transform: scale(1.05);
 }
-
+.cloth-item :hover img {
+    transform: translateY(-10px);;
+}
+ /* Select only even Elements
+ .cloth-container .cloth-item .cloth-image :nth-child(odd){
+    animation:animate  5s ease-in-out infinite;
+} */
 .info-container {
     margin-top: 40px;
     text-align: center;
@@ -155,8 +190,21 @@ body {
     cursor: pointer;
     border-radius: 5px;
     transition: transform 0.3s ease;
+    margin-bottom:-150px;
+    margin-top: -20px;
 }
 
 .info-container button:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);}
+/*The animation css*/
+@keyframes animate{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px); /* Move up by 20px */
+    }
+    100% {
+        transform: translateY(0);
+    }
 }

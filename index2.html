@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    @keyframes animate{
+     0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    }
+    img{
+        width: 100%; /* Adjust size as needed */
+    height: auto;
+    animation: animate 5s ease-in-out infinite;
+    }
+</style>
+<body>
+    <h1>Animation</h1>
+    <img src="./mens-Img/cloth1.jpg" alt="Animated image ">
+</body>
+</html>
