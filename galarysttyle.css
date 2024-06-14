@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    height: 100%;
+    width: 100%;
+}
+
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 92%;
+    height: 92%;
+    transform: translate(-50%, -50%);
+    background: rgb(146, 151, 137);
+    box-shadow: 10px 30px 70px rgb(208, 131, 15);
+    overflow: hidden;
+    
+}
+
+
+
+.container .slide .item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    border-radius: 20px;
+    box-shadow: 0 30px 50px rgb(0, 0, 0);
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+   
+}
+.slide .item:nth-child(1),
+.slide .item:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.slide .item:nth-child(3) {
+
+    left: calc(50% + 220px);
+}
+
+
+
+.slide .item:nth-child(4) {
+
+    left: calc(50% + 440px)
+}
+.slide .item:nth-child(5) {
+
+    left: calc(50% + 440px)
+}
+ .slide .item:nth-child(n + 5) {
+
+     left: calc(50% + 560px);
+     opacity:0;
+ }
+ .item .content{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    align-items: left;
+    color: rgb(228, 255, 251);
+    transform: translate(0,-50%);
+    font-family: system-ui;
+    display: none;
+ }
+ .slide .item:nth-child(2) .content{
+    display: block;
+ }
+ .content{
+    margin-top: 50px;
+    margin-left: 0;
+   
+
+    
+ }
+ .content .name{
+    font-size: 20px;
+    color: rgb(242, 1, 1);
+    text-transform: uppercase;
+    font-weight:  bold;
+    opacity: 0;
+    animation: animate 1s  ease-in-out 1 forwards;
+ }
+ .content .description{
+    margin-top: 10px;
+    color: rgb(242, 1, 1);
+    margin-bottom: 20px;
+    font-size:14px ;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+ }
+ .content button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+ }
+ @keyframes animate{
+    from{
+        opacity: 0;
+        transform: translate(0,100px);
+        filter: blur(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+
+    }
+ }
+.button{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+.button button{
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin:0.5px;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+.button button:hover{
+    color: #fff;
+    background: #b6acac;
+}
+
+.button .home-button{
+    background: rgb(255, 255, 42);
+    border-radius: 40px;
+    width: 80px;
+    height: 35px;
+  
+    font-weight: bold;
+
+}
+.button .home-button i{
+text-decoration: none;
+}
+
+.item {
+        flex: 1;
+        /* Ensure the item takes up available space */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        /* Cover the entire area */
+        background-position: center;
+        /* Center the background image */
+        background-repeat: no-repeat;
+        /* Prevent the image from repeating */
+        padding: 20px;
+        /* Adjust padding as needed */
+        box-sizing: border-box;
+        /* Ensure padding is included in the size */
+    }
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .slide .item:nth-child(3) {
+        left: calc(50% + 150px);
+    }
+
+    .slide .item:nth-child(4) {
+        left: calc(50% + 300px);
+    }
+
+    .slide .item:nth-child(5) {
+        left: calc(50% + 300px);
+    }
+
+    .slide .item:nth-child(n + 5) {
+        left: calc(50% + 400px);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        width: 90%;
+        height: 90%;
+    }
+
+    .slide .item {
+        width: 150px;
+        height: 200px;
+    }
+
+    .item .content {
+        left: 50px;
+        width: 200px;
+    }
+
+    .slide .item:nth-child(3) {
+        left: calc(50% + 100px);
+    }
+
+    .slide .item:nth-child(4) {
+        left: calc(50% + 200px);
+    }
+
+    .slide .item:nth-child(5) {
+        left: calc(50% + 200px);
+    }
+
+    .slide .item:nth-child(n + 5) {
+        left: calc(50% + 300px);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide .item {
+        width: 120px;
+        height: 180px;
+    }
+
+    .item .content {
+        left: 20px;
+        width: 150px;
+    }
+
+    .slide .item:nth-child(3) {
+        left: calc(50% + 80px);
+    }
+
+    .slide .item:nth-child(4) {
+        left: calc(50% + 160px);
+    }
+
+    .slide .item:nth-child(5) {
+        left: calc(50% + 160px);
+    }
+
+    .slide .item:nth-child(n + 5) {
+        left: calc(50% + 240px);
+    }
+
+    .content .name {
+        font-size: 16px;
+    }
+
+    .content .description {
+        font-size: 12px;
+    }
+
+    .content button {
+        padding: 5px 10px;
+    }
+
+    .button button {
+        width: 30px;
+        height: 25px;
+    }
+
+    .button .home-button {
+        width: 60px;
+        height: 25px;
+    }
+}
+/* Media Queries for Large Desktops */
+@media (min-width: 1400px) {
+    .container {
+        width: 80%;
+        height: 80%;
+    }
+
+    .slide .item {
+        width: 250px;
+        height: 350px;
+    }
+
+    .item .content {
+        left: 150px;
+        width: 350px;
+    }
+
+    .slide .item:nth-child(3) {
+        left: calc(50% + 250px);
+    }
+
+    .slide .item:nth-child(4) {
+        left: calc(50% + 500px);
+    }
+
+    .slide .item:nth-child(5) {
+        left: calc(50% + 500px);
+    }
+
+    .slide .item:nth-child(n + 5) {
+        left: calc(50% + 650px);
+    }
+
+    .content .name {
+        font-size: 24px;
+    }
+
+    .content .description {
+        font-size: 18px;
+    }
+
+    .content button {
+        padding: 15px 25px;
+    }
+
+    .button button {
+        width: 50px;
+        height: 40px;
+    }
+
+    .button .home-button {
+        width: 100px;
+        height: 40px;
+    }
+}

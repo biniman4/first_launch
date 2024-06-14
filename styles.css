@@ -1,58 +1,49 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
-
-.navbar {
+.navbar{
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding:20px;
 
 }
-
-nav {
+nav{
     flex: 1;
     text-align: right;
 }
-
-nav ul {
+nav ul{
     display: inline-block;
     list-style: none;
 }
-
-nav ul li {
+nav ul li{
     display: inline-block;
     margin-right: 20px;
 
 }
-
-a {
-    text-decoration: none;
+a{
+    text-decoration:none;
     font-weight: bold;
     /*color: #555;*/
     color: #fffbfb;
 }
-
-p {
+p{
     color: #555;
 }
-
-.container {
+.container{
     max-width: 1300px;
-    margin: auto;
+    margin:auto ;
     padding-left: 25px;
     padding-right: 25px;
 
 }
-
-.row {
+.row{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -60,100 +51,87 @@ p {
 
 
 }
-
-.col-2 {
+.col-2{
     flex-basis: 50%;
     min-width: 300px;
-
+    
 
 }
-
-.col-2 img {
-
+.col-2 img{
+    
     padding: 40px;
     max-width: 100%;
     margin-bottom: 20px 0;
     border-radius: 20px;
 }
-
-.col-2 h1 {
+.col-2 h1{
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
 
 }
 
-.btn {
+.btn{
     display: inline-block;
     background: #dd680f;
     color: #f5f5f5;
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
-    transition: background 0.5s;
+    transition:background 0.5s ;
 }
-
-.btn:hover {
-    background: #563434;
+.btn:hover{
+    background:#563434 ;
 
 }
-
-.header {
+.header{
     /*background: radial-gradient(#fff, #ffd6d6);*/
-    background: radial-gradient(#fae0c6, #f7c63f);
+    background: radial-gradient(#fae0c6,#f7c63f);
 }
-
-.header .row {
+.header .row{
     margin-top: 70px 0;
 
 
 }
-
-.catigories {
+.catigories{
     margin: 70px 0;
 }
-
-.col-3 {
+.col-3{
     flex-basis: 30%;
     min-width: 250px;
     margin-bottom: 30px;
 }
-
-.col-3 img {
-    width: 100%;
+.col-3 img{
+    width:100%;
 }
-
-.small-container {
+.small-container{
     max-width: 1080px;
-
+   
     margin: auto;
     padding-left: 25px;
     padding-right: 25PX;
 
 }
-
-.col-4 {
+.col-4{
     flex-basis: 25%;
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
-
+   
     transition: transform 0.5s;
 }
-
-.col-4 img {
+.col-4 img{
     width: 100%;
 }
-
-.tittle {
+.tittle{
     text-align: center;
-    margin: 0 auto 80px;
+    margin:0 auto 80px;
     position: relative;
     line-height: 60px;
     color: #555;
 }
 
-.tittle::after {
+.tittle::after{
     content: '';
     background: #ff523b;
     width: 80px;
@@ -165,22 +143,19 @@ p {
     transform: translatex(-50%);
 }
 
-h4 {
+h4{
     color: #555;
     font-weight: normal;
 
 }
-
-.col-4 p {
+.col-4 p{
     font-size: 14px;
 }
-
-.rating .fa {
+.rating .fa{
     color: #2aa4e0;
 
 }
-
-.col-4:hover {
+.col-4:hover{
     transform: translateY(-7px);
 
 }
@@ -188,151 +163,122 @@ h4 {
 
 
 /*-------offer----------*/
-.offer {
+.offer{
     background: radial-gradient(#fae0c6, #f7c63f);
     margin-top: 80px;
     margin-bottom: 30px 0;
 
 }
-
-.col-2 .offer-img {
+.col-2 .offer-img{
     padding: 50px;
 
 }
-
-.small {
+.small{
     color: #555;
 }
-
 /*-------offer----------*/
-.testimonial {
+.testimonial{
     border: 2px solid rgb(0, 234, 255);
     padding-top: 100px;
 }
-
-.testimonial .col-3 {
+.testimonial .col-3{
     padding: 40px 20px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.37);
-    text-align: center;
-    cursor: pointer;
+    text-align: center;cursor: pointer;
     transition: transform 0.6s;
 
 }
-
-.testimonial .col-3 img {
+.testimonial .col-3 img{
     width: 100px;
     margin-top: 20px;
     border-radius: 50%;
 }
-
-.testimonial .col-3:hover {
+.testimonial .col-3:hover{
     transform: translatey(-10px);
 
 }
-
-.fa-commenting {
+.fa-commenting{
     font-size: 30px;
     color: #1c8aff;
 }
-
-.testimonial .col-3 p {
+.testimonial .col-3 p{
     font-size: 12px;
     margin: 12px 0;
     color: #777;
 }
-
-.testimonial.col-3 h3 {
-    font-size: 16px;
+.testimonial.col-3 h3{
+    font-size:16px;
     font-weight: 600;
     color: #555;
 }
-
-.brands {
+.brands{
     margin: 100px 0;
 }
-
-.col-5 {
+.col-5{
     width: 160px;
 }
-
-.col-5 img {
+.col-5 img{
     cursor: pointer;
     width: 100%;
     filter: grayscale(0);
 }
-
-.col-5 img:hover {
-
+.col-5 img:hover{
+    
     filter: grayscale(100%);
 }
-
 /*this is style for footer */
-.footer {
+.footer{
     background: #000;
     color: #8a8a8a;
     font-size: 14px;
     padding: 60px 0 20px;
 }
-
-.footer p {
+.footer p{
     color: #8a8a8a;
 }
-
-.footer h3 {
+.footer h3{
     color: #fff;
     margin-bottom: 20px;
 }
-
-.footer-col-1,
-.footer-col-2,
-.footer-col-3,
-.footer-col-4 {
+.footer-col-1, .footer-col-2,.footer-col-3, .footer-col-4{
     min-width: 250px;
     margin-bottom: 20px;
 
 }
 
-.footer-col-1 {
+.footer-col-1{
     flex-basis: 30%;
 }
-
-.footer-col-2 {
-    flex: 1;
+.footer-col-2{
+    flex:1;
     text-align: center;
-}
-
-.footer-col-2 img {
+} 
+.footer-col-2 img{
     width: 180px;
     margin-bottom: 20px;
 }
 
 
-.footer-col-3,
-.footer-col-4 {
+.footer-col-3, .footer-col-4{
     flex-basis: 12%;
     text-align: center;
 }
-
-ul {
+ul{
     list-style: none;
 }
-
-.app-logo {
+.app-logo{
     margin-top: 20px;
 }
-
-.app-logo img {
+.app-logo img{
     width: 140px;
 }
-
-.footer hr {
+.footer hr{
     border: none;
     background: #b5b5b5;
     height: 1px;
     margin: 20px 0;
 }
-
-.copyright {
+.copyright{
     text-align: center;
 
 }
@@ -340,58 +286,53 @@ ul {
 
 
 /*----------- about menu bar --------------*/
-.menu-icon {
+.menu-icon{
     width: 30px;
     margin-left: 20px;
     display: none;
 
 }
 
-/* media query for */
+/* media query for */ 
 
-@media only screen and (max-width:800px) {
-    nav ul {
+@media only screen and (max-width:800px){
+    nav ul{
         position: absolute;
-        top: 100px;
+        top:100px;
         left: 0;
-
+        
         /* background: #555;f*/
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
     }
-
-    nav ul li {
+    nav ul li{
         display: block;
         margin-right: 50px;
         margin-top: 10px;
         margin-bottom: 10px;
-
+       
     }
-
-    nav ul li a {
+    nav ul li a{
         color: #fff;
-        /* font-size: 10px;*/
+       /* font-size: 10px;*/
     }
-
-    .menu-icon {
+       .menu-icon{
         display: block;
         cursor: pointer;
     }
 }
-
-/* media query for  less than 600 */
+ /* media query for  less than 600 */
 
 @media only screen and (max-width:600px) {
-    .row {
+    .row{
         text-align: center;
     }
-
-    .col-2,
-    .col-3,
-    .col-4 {
+    .col-2, .col-3,.col-4{
         flex-basis: 100%;
 
     }
 
 }
+
+
