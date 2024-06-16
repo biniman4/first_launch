@@ -1,0 +1,285 @@
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-bar-color: linear-gradient(to right, #000080, #000);
+}
+
+body {
+    font-family: Arial, sans-serif; /* Adjust as needed */
+    background-color: #f0f0f0; /* Example background color */
+}
+
+/* Navigation bar styles */
+.nav-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: white;
+    font-size: 30px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+.nav-bar h1 {
+    margin: 0;
+    color: black;
+}
+.nav-bar h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    margin: 0 35px;
+    font-size: 24px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar ul li a:hover, .nav-bar ul li a.active {
+    border-bottom: 2px solid #f1bb08;
+}
+
+.icon {
+    display: none;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .nav-bar ul {
+        display: none; /* Hide the nav links by default on small screens */
+        position: absolute;
+        top:0; /* Adjust as needed based on your nav-bar height */
+        left: 0;
+        width: 30%;
+        background-color: #faf1f1;
+        padding: 10px 0;
+        flex-direction: column;
+        text-align: center;
+        transition: max-height 0.5s;
+    }
+
+    .nav-bar ul.show {
+        display: flex; /* Display the nav links when the show class is added */
+    }
+
+    .nav-bar ul li {
+        margin: 10px 0;
+    }
+
+    .icon {
+        display: block;
+        position: absolute;
+        top: 22px;
+        right: 20px;
+        color: black;
+        font-size: 28px;
+        cursor: pointer;
+        transition: transform 0.3 ease;
+    }
+    .icon:hover{
+        transform: scale(1.3);
+    }
+    .cloth-container {
+       text-align: center;
+       width:400px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    
+    .cloth-item{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .cloth-image {
+        width: 300px;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+
+/* Cloth container and item styles */
+.cloth-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.cloth-container h1{
+    margin-top: 150px;   
+}
+.cloth-item {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-bottom: 0;
+}
+.cloth-image {
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.cloth-image:hover {
+    transform: scale(1.05);
+}
+.cloth-item :hover img {
+    transform: translateY(-10px);;
+}
+ /* Select only even Elements
+ .cloth-container .cloth-item .cloth-image :nth-child(odd){
+    animation:animate  5s ease-in-out infinite;
+} */
+.info-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.info-container h1 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.info-container button {
+    background: rgb(235, 12, 161);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    margin-bottom:-150px;
+    margin-top: -20px;
+}
+
+.info-container button:hover {
+    transform: scale(1.3);}
+/*The animation css*/
+@keyframes animate{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px); /* Move up by 20px */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/*footer*/
+
+ /*this is style for footer */
+
+
+
+ .footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    margin-top: 50px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2,.footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex:1;
+    text-align: center;
+} 
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+
+}
+.container1{
+    max-width: 1300px;
+    margin:auto ;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}

@@ -298,11 +298,11 @@ ul{
 @media only screen and (max-width:800px){
     nav ul{
         position: absolute;
-        top:100px;
+        top:0;
         left: 0;
         
-        /* background: #555;f*/
-        width: 100%;
+        background: #555;
+        width: 30%;
         overflow: hidden;
         transition: max-height 0.5s;
     }
